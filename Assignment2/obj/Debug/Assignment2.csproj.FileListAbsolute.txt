@@ -1,0 +1,14 @@
+C:\Users\vicky\Desktop\csharp\Assignments\Assignment2\bin\Debug\vehicles.mdf
+C:\Users\vicky\Desktop\csharp\Assignments\Assignment2\bin\Debug\vehicles_log.ldf
+C:\Users\vicky\Desktop\csharp\Assignments\Assignment2\bin\Debug\Assignment2.exe.config
+C:\Users\vicky\Desktop\csharp\Assignments\Assignment2\bin\Debug\Assignment2.exe
+C:\Users\vicky\Desktop\csharp\Assignments\Assignment2\bin\Debug\Assignment2.pdb
+C:\Users\vicky\Desktop\csharp\Assignments\Assignment2\obj\Debug\Assignment2.csproj.AssemblyReference.cache
+C:\Users\vicky\Desktop\csharp\Assignments\Assignment2\obj\Debug\Assignment2.csproj.SuggestedBindingRedirects.cache
+C:\Users\vicky\Desktop\csharp\Assignments\Assignment2\obj\Debug\Assignment2.Form1.resources
+C:\Users\vicky\Desktop\csharp\Assignments\Assignment2\obj\Debug\Assignment2.Properties.Resources.resources
+C:\Users\vicky\Desktop\csharp\Assignments\Assignment2\obj\Debug\Assignment2.csproj.GenerateResource.cache
+C:\Users\vicky\Desktop\csharp\Assignments\Assignment2\obj\Debug\Assignment2.csproj.CoreCompileInputs.cache
+C:\Users\vicky\Desktop\csharp\Assignments\Assignment2\obj\Debug\Assignment2.exe
+C:\Users\vicky\Desktop\csharp\Assignments\Assignment2\obj\Debug\Assignment2.pdb
+C:\Users\vicky\Desktop\csharp\Assignments\Assignment2\obj\Debug\Assignment2.Form2.resources

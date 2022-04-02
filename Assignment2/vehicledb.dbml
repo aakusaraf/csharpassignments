@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="vehicles" Class="vehicledbDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\vehicles.mdf;Integrated Security=True" SettingsObjectName="Assignment2.Properties.Settings" SettingsPropertyName="vehiclesConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.companies" Member="companies">
+    <Type Name="company">
+      <Column Name="company_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="company_name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="company_model" Member="models" ThisKey="company_id" OtherKey="company_id" Type="model" />
+    </Type>
+  </Table>
+  <Table Name="dbo.models" Member="models">
+    <Type Name="model">
+      <Column Name="model_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="model_name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="model_type" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="company_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="company_model" Member="company" ThisKey="company_id" OtherKey="company_id" Type="company" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>
