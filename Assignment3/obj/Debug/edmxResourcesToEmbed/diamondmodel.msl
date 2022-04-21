@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="diamondsModelStoreContainer" CdmEntityContainer="diamondsEntities">
+    <EntitySetMapping Name="diamondinfoes">
+      <EntityTypeMapping TypeName="diamondsModel.diamondinfo">
+        <MappingFragment StoreEntitySet="diamondinfo">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="color" ColumnName="color" />
+          <ScalarProperty Name="cut" ColumnName="cut" />
+          <ScalarProperty Name="clarity" ColumnName="clarity" />
+          <ScalarProperty Name="carat" ColumnName="carat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

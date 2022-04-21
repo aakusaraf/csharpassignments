@@ -1,0 +1,51 @@
+﻿@model Tuple<Assignment3.diamondinfo>
+
+@{
+    ViewBag.Title = "Diamond detail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Diamond</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Item1.color)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Item1.color)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Item1.cut)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Item1.cut)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Item1.clarity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Item1.clarity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Item1.carat)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Item1.carat)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Item1.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

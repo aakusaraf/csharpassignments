@@ -1,0 +1,53 @@
+﻿@*@model IEnumerable<Assignment3.diamondinfo>*@
+@model Tuple<List<Assignment3.diamondinfo>>
+
+@{
+    ViewBag.Title = "Diamonds";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>List of diamonds</h2>
+
+<p>
+    @Html.ActionLink("Add New Diamond", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Color
+        </th>
+        <th>
+            Cut
+        </th>
+        <th>
+            Clarity
+        </th>
+        <th>
+            Carat
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model.Item1) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.color)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.cut)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.clarity)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.carat)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>
