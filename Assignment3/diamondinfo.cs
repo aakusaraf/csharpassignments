@@ -14,10 +14,7 @@ namespace Assignment3
     
     public partial class diamondinfo
     {
-        public diamondinfo()
-        {
-
-        }
+        
         public int Id { get; set; }
         public string color { get; set; }
         public string cut { get; set; }
