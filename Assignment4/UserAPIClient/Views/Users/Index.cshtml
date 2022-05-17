@@ -1,0 +1,64 @@
+﻿@model IEnumerable<Tuple<int,string,string,string,long?,List<string>>>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                UserName
+            </th>
+            <th>
+                Name
+            </th>
+            <th>
+                E-mail
+            </th>
+            <th>
+                Phone Number
+            </th>
+            <th>
+                Role
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Item2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Item3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Item4)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Item5)
+            </td>
+            <td>
+                @foreach (var role in item.Item6)
+               {
+                   @Html.DisplayFor(modelItem => role)
+               }
+                
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Item1">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Item1">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Item1">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
